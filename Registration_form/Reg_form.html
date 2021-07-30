@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="UTF-8">
+<meta name="view-port" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="reg_form.css" type="text/css"/ >
+<title> REGISTRATON FORM </title>
+<script src="reg_form.js">
+	
+</script>
+
+
+
+</head>
+<body>
+	<div class="regform">
+		<h1> REGISTRATION FORM </h1>
+	</div>
+	<div class="main">
+		
+		<form id="form" name="myform" action="/" method="post">
+			<div id="name">   
+
+				<h2 class="name">
+					Name
+				</h2>
+			<input type="text" class="firstname" id="fname" placeholder="Firstname">
+			<input type="text" class="lastname" id="lname" placeholder="Lastname">
+			<h2 class="name">
+				Email
+			</h2>
+			<input class="email" id="email" type="email" placeholder="Enter your email" size="50">
+			<h2 class="name"> 
+				Company
+			</h2>
+			<input class="company" type="text" name="company" id="company">
+			<h2 class="name"> 
+				Phone Number
+			</h2>
+
+
+			<input class="code" type="text" list="area_code" name="area_code">
+			<datalist id="area_code">
+				<option disabled="disabled" selected="selected">--area-code--</option>
+
+				<option value="India (+91)"> India (+91) </option>
+				<option value="USA / Canada (+1)">USA / Canada (+1)</option>
+				<option value="Afghanistan (+93)">Afghanistan (+93) </option>
+				<option value="Bangladesh (+880)">Bangladesh (+880)</option> 
+				<option value="Swaziland (+268)">Swaziland (+268)</option>
+			</datalist>
+			<input class="number" type="text" name="phone" id="phone">
+			<h2 class="name">
+                  Courses </h2>
+            <select class="option" name="courses" id="courses">
+                <option disabled="disabled" selected="selected">--Choose option--</option>
+                <option> Core Java </option>
+                <option> C </option>
+                <option> Python </option>
+            </select>
+            <h2 id="student"> Are you beginner? </h2>
+            <label class="radio">
+                <input class="radio-one" type="radio" checked="checked" name="rdiobtn">
+                <span class="checkmark"></span>
+                Yes
+            </label>
+    
+            <label class="radio">
+                <input class="radio-two" type="radio" name="rdiobtn">
+                <span class="checkmark"></span>
+                No
+            </label>
+
+            <button type="button" value="submit" onclick="validate()"> Register </button>
+
+
+
+			</div>
+		</form>
+	</div>
+
+
+ 
+
+
+</body>
+
+</html>
