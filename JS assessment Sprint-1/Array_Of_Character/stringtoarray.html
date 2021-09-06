@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title> String to an array of characters  </title>
+</head>
+<body>
+    Enter the string 
+    <input type= "text" id="text1">
+    <input type="submit" onclick="arrayofchar()">
+    <script type="text/javascript">
+    function arrayofchar()
+    {
+        var str= document.getElementById("text1").value;
+        document.write("Array of character : ",Array.from(str));
+    
+    
+        console.log("Array of character : ",[...str]);
+    }
+</script>
+
+</body>
+</html>
