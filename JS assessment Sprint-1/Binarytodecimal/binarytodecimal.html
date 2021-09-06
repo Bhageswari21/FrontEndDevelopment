@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title> Binary to decimal number conversion </title>
+</head>
+<body>
+    Enter the number 
+    <input type= "text" id="number">
+    <input type="submit" onclick="checknum()">
+    <script type="text/javascript">
+    function checknum()
+    {
+        var num= Number(document.getElementById("number").value);
+        var sum=0,i,rem;
+        for(i=0;num!=0;i++)
+        {
+            rem=num % 10;
+            sum=sum+rem* Math.pow(2,i);
+            num= parseInt(num/10);
+        }
+        document.write("Decimal number = "+sum);
+    }
+    </script>
+
+</body>
+</html>
